@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+    android:id="@+id/forecastLinearLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+   <androidx.cardview.widget.CardView
+        android:id="@+id/forecastCardView"
+        android:layout_width="115dp"
+        android:layout_height="150dp"
+       android:backgroundTint="#EFFEFEFE"
+       app:cardUseCompatPadding="true"
+       app:cardElevation="3dp"
+        app:cardCornerRadius="20dp">
+
+
+       <TextView
+           android:id="@+id/textviewForescastDate"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="01/09"
+           android:textColor="#E72196F3"
+           android:textSize="10dp"
+           android:layout_gravity="center"
+           android:layout_marginBottom="55dp"
+
+           />
+
+       <TextView
+           android:id="@+id/textviewForescastTime"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="12:00"
+           android:textColor="#E72196F3"
+           android:textSize="15dp"
+             android:layout_gravity="center"
+        android:layout_marginBottom="40dp"
+            />
+
+       <ImageView
+           android:id="@+id/imageViewForecast"
+           android:layout_width="70dp"
+           android:layout_height="50dp"
+           android:layout_gravity="center"
+           android:layout_marginBottom="2dp"
+           android:src="@drawable/weatherlogo" />
+
+       <TextView
+           android:id="@+id/textviewForescastTemperature"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="0.0°C"
+           android:textColor="#E72196F3"
+           android:textSize="20sp"
+           android:shadowColor="#62000000"
+           android:shadowRadius="9"
+           android:shadowDx="5"
+           android:shadowDy="5"
+           android:layout_marginTop="45dp"
+           android:layout_gravity="center"/>
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
